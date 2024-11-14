@@ -1,14 +1,21 @@
-﻿using ejer3;
+﻿using System;
 
-Desayuno des=new Desayuno();
-des.Nombre ="Continental";
-des.Precio =20.5;
-des.Dias ="Lun, mar, mier";
-
-Console.WriteLine(des);
-
-string[] lista = des.ListaDias();
-foreach (string str in lista) 
+namespace ejer3
 {
-    Console.WriteLine(str);
+    internal class Desayuno
+    {
+        public string Nombre { get; set; }
+        public double Precio { get; set; }
+        public string Dias { get; set; }
+
+        public override string ToString()
+        {
+            return $"Desayuno {Nombre} s/{Precio}, servido los días {Dias}";
+        }
+
+        public string[] ListaDias()
+        {
+            return Dias.Split(',');
+        }
+    }
 }
