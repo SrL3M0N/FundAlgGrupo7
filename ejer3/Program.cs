@@ -13,11 +13,3 @@ foreach (string str in lista)
     Console.WriteLine(str);
 }
 
-public static void Main(string[]lista) {
-
-    Console.WriteLine("Ingrese su nombre: ");
-    string nom = Console.ReadLine();
-    object des = lista.remove(desayuno);
-    
- }
-   
