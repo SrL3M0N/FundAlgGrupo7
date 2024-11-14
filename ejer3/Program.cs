@@ -12,3 +12,4 @@ foreach (string str in lista)
 {
     Console.WriteLine(str);
 }
+
